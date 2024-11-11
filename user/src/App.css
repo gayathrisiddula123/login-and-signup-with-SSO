@@ -1,0 +1,128 @@
+*{
+  padding: 0%;
+  margin: 0%;
+}
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif; /* Use a clean sans-serif font */
+}
+.App h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 500px;
+  color: #7c0000; /* Dark gray color for the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  padding: 10px;
+}
+/* Container for form */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom:15px;
+  border-radius: 8px;
+  background-color: #faf5f5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Form header */
+.form-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input fields */
+.form-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing:content-box;
+  font-size: 16px;
+}
+
+/* Button styling */
+.form-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #05ad08; /* Darker green on hover */
+}
+
+/* Success message style */
+.success-message {
+  margin-top: 15px;
+  color: #28a745; /* Green color for success messages */
+  font-size: 14px;
+}
+
+/* Error message style */
+.error-message {
+  margin-top: 15px;
+  color: #dc3545; /* Red color for error messages */
+  font-size: 14px;
+}
+
+
+/* Container for login and signup */
+.signup-login-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements */
+    justify-content: center; /* Center elements */
+    margin: 20px; /* Margin around the container */
+}
+
+/* Input field styles */
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin: 7px 0; /* Margin between input fields */
+    border: 2px solid #000000; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    width: 200px; /* Fixed width for inputs */
+    font-size: 16px; /* Font size for input text */
+}
+
+/* Button styling */
+button {
+    padding: 10px 20px;
+    background-color: #ff0000; /* Bootstrap blue */
+    color: white;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 16px; /* Font size for button text */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+button:hover {
+    background-color: #e61809; /* Darker blue on hover */
+}
+
+/* Welcome message style */
+.welcome-message {
+    font-size: 1.2em; /* Slightly larger font size */
+    margin: 20px 0; /* Margin around the welcome message */
+}
+
+/* Logout button style */
+.logout-button {
+    background-color: #ff4d4f; /* Red color for logout */
+}
+
+.logout-button:hover {
+    background-color: #e43d3f; /* Darker red on hover */
+}
