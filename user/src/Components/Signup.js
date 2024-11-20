@@ -1,5 +1,6 @@
 // src/components/Signup.js
 import React, { useState } from 'react';
+
 import '../App.css';
 
 const SignUp = () => {
@@ -8,8 +9,6 @@ const SignUp = () => {
     const [confirmPassword, setConfirmPassword] = useState('');
     const [message, setMessage] = useState('');
     const [isSuccess, setIsSuccess] = useState(false);
-    
-        
     const handleSignUp = () => {
         if (!email || !password || !confirmPassword) {
             setMessage("Invalid: All fields are required!");

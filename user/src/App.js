@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+
+import jwt_decode from "jwt-decode";
+
 import Signup from './Components/Signup';
 import Login from './Components/Login';
 import GoogleSignIn from './Components/GoogleSignIn';
@@ -11,12 +14,10 @@ const App = () => {
     const handleCallbackResponse = (response) => {
         const userObject = jwt_decode(response.credential);
 
-        // Check if the user is signed up
         const registeredUsers = JSON.parse(localStorage.getItem("registeredUsers")) || [];
         const isUserRegistered = registeredUsers.includes(userObject.email);
 
         if (isUserRegistered) {
-            // Allow login if the user is signed up
             localStorage.setItem("loggedIn", "true");
             localStorage.setItem("userName", userObject.name);
             setUserName(userObject.name);

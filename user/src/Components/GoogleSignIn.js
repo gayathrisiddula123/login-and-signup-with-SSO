@@ -4,8 +4,7 @@ const GoogleSignIn = ({ handleCallbackResponse }) => {
     useEffect(() => {
         if (window.google) {
             window.google.accounts.id.initialize({
-                
-                client_id: "492267953637-dnaosdr84aeqvr3pict5jks3jvr1aneq.apps.googleusercontent.com",
+                client_id: "492267953637-mn4e98fd4umrjq5d8kdcc3o8u9kbfu8o.apps.googleusercontent.com",
                 callback: handleCallbackResponse,
             });
             window.google.accounts.id.renderButton(
